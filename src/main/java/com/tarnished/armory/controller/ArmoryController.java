@@ -13,6 +13,7 @@ public class ArmoryController {
     @Autowired
     private ArmoryService service;
 
+    @CrossOrigin()
     @RequestMapping (value="/{endPoint}", method = RequestMethod.GET)
     public ArmoryDto[] getArmories(@PathVariable("endPoint") String endPoint, @RequestParam(name = "version") String version) {
 
@@ -25,6 +26,7 @@ public class ArmoryController {
         }
     }
 
+    @CrossOrigin()
     @RequestMapping (value="/{endPoint}/{name}", method = RequestMethod.GET)
     public ArmoryDto getArmory(@PathVariable("endPoint") String endPoint, @PathVariable("name") String name, @RequestParam(name = "version") String version) {
 

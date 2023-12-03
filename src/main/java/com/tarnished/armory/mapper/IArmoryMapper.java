@@ -9,7 +9,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.SET_TO_DEFAULT)
+@Mapper(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
 public interface IArmoryMapper {
     IArmoryMapper INSTANCE = Mappers.getMapper(IArmoryMapper.class);
     ArmoryDto entityToDto(ArmoryEntity armory);

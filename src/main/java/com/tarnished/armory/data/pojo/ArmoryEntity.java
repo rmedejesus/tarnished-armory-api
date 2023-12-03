@@ -24,7 +24,7 @@ public class ArmoryEntity {
     @SerializedName("description")
     public List<String> description;
     @SerializedName("is_tradable")
-    public boolean isTradable;
+    public Boolean isTradable;
     @SerializedName("price_sold")
     public Long priceSold;
     @SerializedName("rarity")
@@ -46,11 +46,11 @@ public class ArmoryEntity {
     @SerializedName("status_effects")
     public Map<String, Long> statusEffects;
     @SerializedName("is_buffable")
-    public boolean isBuffable;
+    public Boolean isBuffable;
     @SerializedName("is_l1_guard")
-    public boolean isL1Guard;
+    public Boolean isL1Guard;
     @SerializedName("allow_ash_of_war")
-    public boolean allowAshOfWar;
+    public Boolean allowAshOfWar;
     @SerializedName("attack_attributes")
     public List<String> attackAttributes;
     @SerializedName("behavior_variation_id")
@@ -100,11 +100,11 @@ public class ArmoryEntity {
     @SerializedName("hold_action")
     public String holdAction;
     @SerializedName("is_weapon_buff")
-    public boolean isWeaponBuff;
+    public Boolean isWeaponBuff;
     @SerializedName("is_shield_buff")
-    public boolean isShieldBuff;
+    public Boolean isShieldBuff;
     @SerializedName("is_horseback_castable")
-    public boolean isHorsebackCastable;
+    public Boolean isHorsebackCastable;
     @SerializedName("summon_quantity")
     public Long summonQuantity;
     @SerializedName("abilities")
@@ -118,11 +118,11 @@ public class ArmoryEntity {
     @SerializedName("availability")
     public String availability;
     @SerializedName("is_consumed")
-    public boolean isConsumed;
+    public Boolean isConsumed;
     @SerializedName("is_ladder_usable")
-    public boolean isLadderUsable;
+    public Boolean isLadderUsable;
     @SerializedName("is_horseback_usable")
-    public boolean isHorsebackUsable;
+    public Boolean isHorsebackUsable;
     @SerializedName("damage")
     public Map<String, Long> damage;
 }
